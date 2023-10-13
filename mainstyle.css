@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    background: none;
+}
+
+/* SIDE MENU PART */
+
+.sm-wrapper{
+    margin-top: 80px;
+}
+
+.sidemenu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 15px;
+}
+
+.sidemenu a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'inconsolata', monospace;
+    color: #ffffff;
+    display: block;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.sidemenu .close{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 95px;
+    margin-left: 50px;
+}
+
+/* SIDE MENU HOVER EFFECT */
+
+.sm-wrapper a:after{
+    z-index: -1;
+    position: absolute;
+    left: 0%;
+    width: 0;
+    height: 20px;
+    background: black;
+    content: '';
+    transition: width 0.35s ease-in-out;
+}
+
+.sm-wrapper a:hover:after{
+    width: 10%;
+}
+
+.sm-wrapper a:hover{
+    padding-left: 64px;
+    transition: 0.35s ease-in-out;
+}
+
+/* CONTENT PART */
+
+#pg-content{
+    transition: margin-left 0.5s;
+    display: flex;
+    padding: 12px;
+    background: none;
+}
+
+img {
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-left: 12rem;
+}
+
+header {
+    position: absolute;
+    overflow: hidden;
+    height: 4rem;
+    width: 69rem;
+    margin-left: 6.9rem;
+    background-color: slateblue;
+}
+
+
+
+iframe{
+    display: flex;
+    margin-left: 50px;
+    margin-top:4.1rem;
+}
+
+.footer {
+    display: inline-flex;
+    position: sticky;
+    height: 50px;
+    width: 69rem;
+    margin-left: 7.4rem;
+    background-color: rgb(0,153,255);
+    text-align: center;
+    z-index: 10;
+}
+
+.footer, ul li {
+    display: inline-flex;
+}
+
+a {
+    text-decoration:  none;
+    color: white;
+    margin: 1rem;
+}

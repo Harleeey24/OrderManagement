@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Order</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 12px;
+            float: left;
+            margin-left: 5rem;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .input-field {
+            position: relative;
+            padding: 15px;
+        }
+
+        .input-field input {
+            width: 100%;
+            height: 30px;
+            border-radius: 6px;
+            font-size: 15px;
+            border: 2px solid skyblue;
+            background: transparent;
+            color: black;
+            outline: none;
+        }
+
+        .input-field label {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: red;
+            font-size: 19px;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border: 2px solid #18ffff;
+        }
+
+        input:focus ~ label,
+        input:valid ~ label {
+            top: 0;
+            left: 15px;
+            font-size: 15px;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            background-color: #fff;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .pindot {
+            background-color: blue;
+            padding: 3px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ORDERS</h1>
+    <div class="container">
+        <div class="input-field">
+            <input type="text" required spellcheck="false">
+            <label>First name</label>
+        </div>
+        <div class="input-field">
+            <input type="text" required spellcheck="false">
+            <label>Last name</label>
+        </div>
+        <div class="input-field">
+            <input type="email" required spellcheck="false">
+            <label>Email</label>
+        </div>
+        <div class="input-field">
+            <input type="number" required spellcheck="false">
+            <label>Contact Number</label>
+        </div>
+        <h2>Consignee</h2>
+        <div class="input-field">
+            <input type="text" required spellcheck="false">
+            <label>Full name</label>
+        </div>
+        <div class="input-field">
+            <input type="number" required spellcheck="false">
+            <label>Contact Number</label>
+        </div>
+        <!-- Dropdown from -->
+        <h2>From:</h2>
+        <select name="" id="country">
+            <option value="">-- Select Region --</option>
+            <option value="">sample 1</option>
+            <option value="">sample 2</option>
+            <option value="">sample 3</option>
+        </select>
+        <select name="" id="state">
+            <option value="">-- Select Municipality --</option>
+            <option value="">sample 1</option>
+            <option value="">sample 2</option>
+            <option value="">sample 3</option>
+        </select>
+        <select name="" id="city">
+            <option value="">-- Select Barangay --</option>
+            <option value="">sample 1</option>
+            <option value="">sample 2</option>
+            <option value="">sample 3</option>
+        </select>
+        <select name="" id="zip">
+            <option value="">-- Select Zip --</option>
+            <option value="">sample 1</option>
+            <option value="">sample 2</option>
+            <option value="">sample 3</option>
+        </select>
+        <!-- Dropdown To -->
+        <h2>To:</h2>
+        <select name="" id="country">
+            <option value="">-- Select Region --</option>
+            <option value="">sample 1</option>
+            <option value="">sample 2</option>
+            <option value="">sample 3</option>
+        </select>
+        <select name="" id="state">
+            <option value="">-- Select Municipality --</option>
+            <option value="">sample 1</option>
+            <option value="">sample 2</option>
+            <option value="">sample 3</option>
+        </select>
+        <select name="" id="city">
+            <option value="">-- Select Barangay --</option>
+            <option value="">sample 1</option>
+            <option value="">sample 2</option>
+            <option value="">sample 3</option>
+        </select>
+        <select name="" id="zip">
+            <option value="">-- Select Zip --</option>
+            <option value="">sample 1</option>
+            <option value="">sample 2</option>
+            <option value="">sample 3</option>
+        </select>
+        <!-- Dropdown type -->
+        <h2>Cargo Type:</h2>
+        <select name="" id="country">
+            <option value="">-- Select Region --</option>
+            <option value="">normal</option>
+            <option value="">fragile</option>
+            <option value="">living creature</option>
+        </select>
+        <button onclick="window.location.href='UserOrderPayment.html';" class="pindot">
+            <h5>Next Step</h5>
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<style>
+    #typing {
+	margin-top: 12rem;
+	width: 0ch;
+	color: red;
+	float: left;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 5rem;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 5s steps(22) 1s infinite alternate;
+}
+
+#typing span{
+	color: red;
+	display: flex;
+}
+
+#crow {
+	display: flex;
+	float: left;
+	color: white;
+	font-family: consolas;
+	font-weight: bold;
+	font-size: 5rem;
+	animation: crow 0.5s linear 0s infinite;
+}
+
+.name {
+	font-size: 12rem;
+	color: red;
+}
+
+@keyframes typing {
+	from{
+		width: 0ch;
+	}
+	to{
+		width: 25ch;
+	}
+}
+
+
+@keyframes crow {
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+</style>
+
+<body>
+    <div id="typing"><span>WELCOME</span></div><div id="crow">|</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
